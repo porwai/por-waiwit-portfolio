@@ -1,0 +1,36 @@
+---
+import type { Award } from "../types/config";
+
+type Props = Award;
+
+const { title, organization, description, date, url } = Astro.props;
+---
+
+{
+  url ? (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="block p-6 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors group"
+    >
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="font-semibold text-lg group-hover:text-blue-600 transition-colors">
+          {title}
+        </h3>
+        <span class="text-sm text-gray-500 whitespace-nowrap ml-4">{date}</span>
+      </div>
+      <p class="text-blue-600 font-medium mb-2">{organization}</p>
+      <p class="text-gray-600">{description}</p>
+    </a>
+  ) : (
+    <div class="p-6 rounded-lg border border-gray-200">
+      <div class="flex justify-between items-start mb-2">
+        <h3 class="font-semibold text-lg">{title}</h3>
+        <span class="text-sm text-gray-500 whitespace-nowrap ml-4">{date}</span>
+      </div>
+      <p class="text-blue-600 font-medium mb-2">{organization}</p>
+      <p class="text-gray-600">{description}</p>
+    </div>
+  )
+}
