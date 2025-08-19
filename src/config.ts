@@ -88,11 +88,11 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "cool info about me !",
   about: {
     description: `
-I’m currently focused on large language models at Princeton University, where I’m working with Prof. Arti Gupta on automatic program synthesis as part of my thesis/independent work. 
+I’m currently focused on learning more about large language models at Princeton University, where I’m working with Prof. Arti Gupta on automatic program synthesis as part of my thesis/independent work. 
 <br/><br/>
 I have strong experience in backend engineering and machine learning, and I especially enjoy working with computer systems. My detailed experiences and awards are listed below.
 <br/><br/>
-I am also a avid explorer + currently trying for all 7 peaks (non-everest). Here are some pics of travels.`, // Markdown is supported
+I am also an avid explorer of countries + currently trying for all 7 peaks (non-everest). Here are some pics of travels.`, // Markdown is supported
     image_l: {
       url: "/bridge.jpeg",
       alt: "Left Picture",
@@ -192,13 +192,13 @@ export const projectsPageContent: ProjectPageContent = {
     description: "Check out what I've been working on.",
     image: "/llama_picture.jpeg",
   },
-  subtitle: "Check out what I've been working on.",
+  subtitle: "Projects that I have worked on !",
   projects: [
     {
       title: "Full Stack Web App for NJ Rise",
       description:
         "Led development of a production-ready analytics tool for a New Jersey food pantry. Built with Vue, TypeScript, and Tailwind, delivering actionable insights for non-profit operations.",
-      image: "/demo-2.jpg",
+      image: "/rise.png",
       year: "2024",
       url: "https://github.com/mhuang412/COS333-NJ-Rise",
     },
@@ -206,7 +206,7 @@ export const projectsPageContent: ProjectPageContent = {
       title: "Independent Research: LESS is More",
       description:
         "Explored data-efficient fine-tuning of LLMs by applying LESS data selection and QLoRA. Fine-tuned Llama-2-7B on single-task math with just 1k prompts.",
-      image: "/demo-2.jpg",
+      image: "/less.png",
       year: "2024",
       url: "https://drive.google.com/file/d/19-G-RsRq4B0T6d3tuxcz6A8jdglrc9c4/view?usp=sharing",
     },
@@ -214,25 +214,25 @@ export const projectsPageContent: ProjectPageContent = {
       title: "Bias Mitigation in Facial Detection Models",
       description:
         "Designed algorithmic regressors and integrated VGG-16, Haar Cascade, and HOG+SVM models to reduce racial bias in gender classification tasks.",
-      image: "/demo-2.jpg",
+      image: "/cv.png",
       year: "2023",
       url: "https://drive.google.com/file/d/18PWembWbQvfVO078KgeJtYN5hRWLnaIJ/view",
     },
     {
-      title: "Movie Revenue Predictor",
+      title: "Working on Compilers: Tree Parsers, Recreating C, and Learning Parsing",
       description:
-        "Built XGBoost and deep learning models to forecast box office revenue. Placed 2nd in Princeton Data Science Bowl 2023.",
-      image: "/demo-2.jpg",
+        "Built compilers by following the *Making Compilers* book. Projects include tree parsers, type checking, SSA-based optimizations, and recreating a C-like compiler with a working runtime.",
+      image: "/compilers.png",
       year: "2023",
-      url: "https://github.com/porwai",
+      url: "https://github.com/porwai/compilers-projects/tree/main",
     },
     {
       title: "Street Busker iOS App",
       description:
         "Developed a Swift iOS app for street performers with mapping APIs and Firebase backend. Finalist at HackPrinceton 2023.",
-      image: "/demo-2.jpg",
+      image: "/lets_busk.png",
       year: "2023",
-      url: "https://github.com/porwai",
+      url: "https://devpost.com/software/let-s-busk",
     },
   ],
 };
