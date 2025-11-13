@@ -88,7 +88,7 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "cool info about me !",
   about: {
     description: `
-I’m currently focused on learning more about large language models at Princeton University, where I’m working with Prof. Arti Gupta on automatic program synthesis as part of my thesis/independent work. 
+I'm currently working as an undergraduate researcher at Princeton AI Lab under Arvind Narayanan's SAgE Research Group, where I'm contributing to research on the systematic study and evaluation of AI agents. I'm also focused on learning more about large language models at Princeton University, where I'm working with Prof. Arti Gupta on optimizing reAct agents with GEPA as part of my advising. 
 <br/><br/>
 I have strong experience in backend engineering and machine learning, and I especially enjoy working with computer systems. My detailed experiences and awards are listed below.
 <br/><br/>
@@ -105,6 +105,15 @@ I am also an avid explorer of countries + currently trying for all 7 peaks (non-
   work: {
     description: `I've worked at various companies and research labs in the past. My follow experiences are below !`, // Markdown is supported
     items: [
+      {
+        title: "Undergraduate Researcher",
+        company: {
+          name: "Princeton AI Lab (SAgE Research Group)",
+          image: "/sage.png",
+          url: "https://sage.cs.princeton.edu",
+        },
+        date: "Sep 2025 - Present",
+      },
       {
         title: "ML Software Engineer Intern",
         company: {
@@ -124,7 +133,7 @@ I am also an avid explorer of countries + currently trying for all 7 peaks (non-
         date: "Jun - Aug 2024",
       },
       {
-        title: "Undergrad Lab Assistant",
+        title: "Undergraduate Researcher",
         company: {
           name: "Princeton Computer Vision & Learning Lab",
           image: "/pvl.png",
@@ -195,12 +204,20 @@ export const projectsPageContent: ProjectPageContent = {
   subtitle: "Projects that I have worked on !",
   projects: [
     {
-      title: "Full Stack Web App for NJ Rise",
+      title: "Research Assistant at Princeton Artificial Intelligence Lab",
       description:
-        "Led development of a production-ready analytics tool for a New Jersey food pantry. Built with Vue, TypeScript, and Tailwind, delivering actionable insights for non-profit operations.",
-      image: "/rise.png",
-      year: "2024",
-      url: "https://github.com/mhuang412/COS333-NJ-Rise",
+        "Advised by Sayash Kapoor at the Science of Agent Evaluation Lab (SAgE). Working on automated agent error detection and optimization via GEPA.",
+      image: "/react.png",
+      year: "2023 - Present",
+      url: "https://sage.cs.princeton.edu",
+    },
+    {
+      title: "Building and Optimizing DSPy Coding Agents with Gradient-Estimation Prompts",
+      description:
+        "Advised by Prof. Aarti Gupta. Improving DSPy coding agent SWE-Bench-Lite performance with GEPA. Achieved 44% Pass@1 success rate for Qwen 3.0 Coder 30B A3B.",
+      image: "/DSPy8.png",
+      year: "2024 - Present",
+      url: "https://github.com/porwai/dspy-code-agent",
     },
     {
       title: "Independent Research: LESS is More",
@@ -211,14 +228,6 @@ export const projectsPageContent: ProjectPageContent = {
       url: "https://drive.google.com/file/d/19-G-RsRq4B0T6d3tuxcz6A8jdglrc9c4/view?usp=sharing",
     },
     {
-      title: "Bias Mitigation in Facial Detection Models",
-      description:
-        "Designed algorithmic regressors and integrated VGG-16, Haar Cascade, and HOG+SVM models to reduce racial bias in gender classification tasks.",
-      image: "/cv.png",
-      year: "2023",
-      url: "https://drive.google.com/file/d/18PWembWbQvfVO078KgeJtYN5hRWLnaIJ/view",
-    },
-    {
       title: "Working on Compilers: Tree Parsers, Recreating C, and Learning Parsing",
       description:
         "Built compilers by following the *Making Compilers* book. Projects include tree parsers, type checking, SSA-based optimizations, and recreating a C-like compiler with a working runtime.",
@@ -227,12 +236,12 @@ export const projectsPageContent: ProjectPageContent = {
       url: "https://github.com/porwai/compilers-projects/tree/main",
     },
     {
-      title: "Street Busker iOS App",
+      title: "Full Stack Web App for NJ Rise",
       description:
-        "Developed a Swift iOS app for street performers with mapping APIs and Firebase backend. Finalist at HackPrinceton 2023.",
-      image: "/lets_busk.png",
-      year: "2023",
-      url: "https://devpost.com/software/let-s-busk",
+        "Led development of a production-ready analytics tool for a New Jersey food pantry. Built with Vue, TypeScript, and Tailwind, delivering actionable insights for non-profit operations.",
+      image: "/rise.png",
+      year: "2024",
+      url: "https://github.com/mhuang412/COS333-NJ-Rise",
     },
   ],
 };
