@@ -208,7 +208,7 @@ export const projectsPageContent: ProjectPageContent = {
       description:
         "Advised by Sayash Kapoor at the Science of Agent Evaluation Lab (SAgE). Working on automated agent error detection and optimization via GEPA.",
       image: "/react.png",
-      year: "2023 - Present",
+      year: "2025",
       url: "https://sage.cs.princeton.edu",
     },
     {
@@ -216,7 +216,7 @@ export const projectsPageContent: ProjectPageContent = {
       description:
         "Advised by Prof. Aarti Gupta. Improving DSPy coding agent SWE-Bench-Lite performance with GEPA. Achieved 44% Pass@1 success rate for Qwen 3.0 Coder 30B A3B.",
       image: "/DSPy8.png",
-      year: "2024 - Present",
+      year: "2025",
       url: "https://github.com/porwai/dspy-code-agent",
     },
     {
