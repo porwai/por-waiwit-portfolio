@@ -5,14 +5,17 @@ import {marked} from "marked"
 
 type Props = Project;
 
-const { title, description, image, year, url } = Astro.props;
+const { title, description, image, year, url, blogId } = Astro.props;
 
 const htmlDescription = marked.parse(description)
+// Use blogId directly - Astro handles URL encoding automatically
+const href = blogId ? `/blog/${blogId}` : url;
+const target = blogId ? undefined : "_blank";
 ---
 
 <a
-  href={url}
-  target="_blank"
+  href={href}
+  target={target}
   class="sm:py-5 py-10 flex flex-col sm:flex-row gap-6 group-hover:opacity-60 hover:!opacity-100 transition-opacity"
 >
   <div class="h-full bg-gray-700 rounded-lg aspect-video sm:h-[150px]">

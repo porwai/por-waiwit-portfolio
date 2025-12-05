@@ -87,6 +87,7 @@ export type Project = {
   image: string;
   year: string;
   url: string;
+  blogId?: string;
 };
 
 export type ProjectPageContent = {

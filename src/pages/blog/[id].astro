@@ -24,14 +24,14 @@ const { Content, remarkPluginFrontmatter } = await render(post);
   }}
 >
   <section class="mt-10 max-w-2xl mx-auto px-6">
-    <h1 class="font-bold text-3xl mb-4">{post.data.title}</h1>
-    <p class="opacity-60 mb-6">
+    <h1 class="font-bold text-3xl mb-4 text-[#1a1a1a]">{post.data.title}</h1>
+    <p class="opacity-60 mb-6 text-[#1a1a1a]">
       {post.data.description}
     </p>
     <div class="flex gap-4 mb-6">
       <div>
-        <p class="font-medium">{identity.name}</p>
-        <p class="opacity-60">
+        <p class="font-medium text-[#1a1a1a]">{identity.name}</p>
+        <p class="opacity-60 text-[#1a1a1a]">
           {post.data.pubDate.toLocaleDateString()} · {
             remarkPluginFrontmatter.minutesRead
           }
@@ -45,10 +45,86 @@ const { Content, remarkPluginFrontmatter } = await render(post);
       height={300}
       class="apsect-video w-full rounded-xl mb-10"
     />
-    <article
-      class="prose prose-invert prose-a:text-blue-300 prose-a:underline-offset-4 prose-headings:mb-2 prose-p:text-[#b3b3b3]"
-    >
+    <article class="blog-content prose max-w-none">
       <Content />
     </article>
   </section>
 </Layout>
+
+<style is:global>
+  article.blog-content {
+    color: #111111;
+    --tw-prose-body: #111111;
+    --tw-prose-headings: #111111;
+    --tw-prose-bold: #111111;
+    --tw-prose-counters: #4b5563;
+    --tw-prose-bullets: #4b5563;
+    --tw-prose-quotes: #111111;
+    --tw-prose-quote-borders: #d1d5db;
+    --tw-prose-hr: #e5e7eb;
+    --tw-prose-links: #1d4ed8;
+    --tw-prose-th-borders: #d1d5db;
+    --tw-prose-td-borders: #e5e7eb;
+    --tw-prose-code: #111111;
+    --tw-prose-pre-code: #e5e7eb;
+    --tw-prose-pre-bg: #0f172a;
+  }
+
+  article.blog-content h1,
+  article.blog-content h2,
+  article.blog-content h3,
+  article.blog-content h4,
+  article.blog-content h5,
+  article.blog-content h6,
+  article.blog-content p,
+  article.blog-content li,
+  article.blog-content span,
+  article.blog-content td,
+  article.blog-content th,
+  article.blog-content em,
+  article.blog-content i,
+  article.blog-content strong,
+  article.blog-content b {
+    color: #111111;
+  }
+
+  article.blog-content a {
+    color: #1d4ed8;
+  }
+
+  article.blog-content a:hover {
+    color: #1e3a8a;
+  }
+
+  article.blog-content code:not(pre code) {
+    color: #111111;
+    background-color: #f3f4f6;
+    padding: 0.125rem 0.375rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+  }
+
+  article.blog-content pre {
+    background-color: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    color: #f8fafc;
+  }
+
+  article.blog-content pre code {
+    color: inherit;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  article.blog-content blockquote {
+    color: #1f2937;
+    border-left-color: #d1d5db;
+  }
+
+  article.blog-content thead {
+    color: #111111;
+  }
+</style>

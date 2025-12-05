@@ -108,11 +108,11 @@ I am also an avid explorer of countries + currently trying for all 7 peaks (non-
       {
         title: "Undergraduate Researcher",
         company: {
-          name: "Princeton AI Lab (SAgE Research Group)",
+          name: "Princeton AI Lab (SAgE) & Princeton CV&L Lab",
           image: "/sage.png",
           url: "https://sage.cs.princeton.edu",
         },
-        date: "Sep 2025 - Present",
+        date: "Oct 2023 - Present",
       },
       {
         title: "ML Software Engineer Intern",
@@ -133,15 +133,6 @@ I am also an avid explorer of countries + currently trying for all 7 peaks (non-
         date: "Jun - Aug 2024",
       },
       {
-        title: "Undergraduate Researcher",
-        company: {
-          name: "Princeton Computer Vision & Learning Lab",
-          image: "/pvl.png",
-          url: "",
-        },
-        date: "Oct - Dec 2023",
-      },
-      {
         title: "Data Science and ML Intern",
         company: {
           name: "Kasikorn Business Technology Group",
@@ -153,40 +144,8 @@ I am also an avid explorer of countries + currently trying for all 7 peaks (non-
     ],
   },
   awards: {
-    description: `Here are some of the awards and recognitions I've received throughout my academic and professional journey.`,
-    items: [
-      {
-        title: "Chair and Lead Coder",
-        organization: "Princeton Data Science Club",
-        description: "Lead coding Projects at Princeton Data Science Club such as analyzing foot traffic on campus. ",
-        date: "",
-      },
-      {
-        title: "Winner of Princeton Data Science Bowl",
-        organization: "Princeton University",
-        description: "Hacked the 2nd best predictive model via XGBoost and deep learning for forecasting the revenue of movies.",
-        date: "2023",
-      },
-      {
-        title: "Finalist Hackathon",
-        organization: "HackPrinceton",
-        description: "Won send place at HackPrinceton. Created a Swift IOS App to be used by Street Buskers. Hacked an iOS mobile app. Used mapping APIs, Firebase (serverless hosting), and Swift to deploy the app.",
-        date: "2023",
-      },
-      {
-        title: "Bronze Medalist",
-        organization: "International Economics Olympiad",
-        description: "Global Economics Competition hosted by the IEO, 1st out of 200 applicants during the final Thai exam round.",
-        date: "2022",
-      },
-      {
-        title: "Honorable Mention",
-        organization: "International Philosophy Olympiad",
-        description: "Global Philosophy Competition hosted by the IPO, 1st during the final Thai exam round. Honorable Mention during IPO hosted in Slovakia. ",
-        date: "2022",
-      },
-
-    ],
+    description: `I chair the Princeton Data Science Club and lead our engineering. I won the Princeton Data Science Bowl. I’ve also been a 2x finalist at Princeton’s hackathon. Fun twist: before all of this, I represented + won medals for Thailand at international Olympiads… just not the math one. I competed in Economics and Philosophy instead >:).`,
+    items: [],
   },
   connect: {
     description: `I'm always interested in meeting new people and learning new things. Feel free to connect with me.`, // Markdown is supported
@@ -210,14 +169,16 @@ export const projectsPageContent: ProjectPageContent = {
       image: "/react.png",
       year: "2025",
       url: "https://sage.cs.princeton.edu",
+      blogId: "reliability-engineering-for-multi-tool-ai-agents-at-hal", // Links to the detailed blog post
     },
     {
       title: "Building and Optimizing DSPy Coding Agents with Gradient-Estimation Prompts",
       description:
         "Advised by Prof. Aarti Gupta. Improving DSPy coding agent SWE-Bench-Lite performance with GEPA. Achieved 44% Pass@1 success rate for Qwen 3.0 Coder 30B A3B.",
-      image: "/DSPy8.png",
+      image: "/dspy_swe_bench/researchpaper.png",
       year: "2025",
       url: "https://github.com/porwai/dspy-code-agent",
+      blogId: "beyond-pass-fail-trace-driven-analysis-of-a-dspy-coding-agent-on-swe-bench-lite", // Links to the detailed blog post
     },
     {
       title: "Independent Research: LESS is More",
@@ -226,6 +187,7 @@ export const projectsPageContent: ProjectPageContent = {
       image: "/less.png",
       year: "2024",
       url: "https://drive.google.com/file/d/19-G-RsRq4B0T6d3tuxcz6A8jdglrc9c4/view?usp=sharing",
+      // blogId: "your-blog-post-id", // Add blog post ID here when you create the blog post
     },
     {
       title: "Working on Compilers: Tree Parsers, Recreating C, and Learning Parsing",
@@ -234,6 +196,7 @@ export const projectsPageContent: ProjectPageContent = {
       image: "/compilers.png",
       year: "2023",
       url: "https://github.com/porwai/compilers-projects/tree/main",
+      // blogId: "your-blog-post-id", // Add blog post ID here when you create the blog post
     },
     {
       title: "Full Stack Web App for NJ Rise",
@@ -242,6 +205,7 @@ export const projectsPageContent: ProjectPageContent = {
       image: "/rise.png",
       year: "2024",
       url: "https://github.com/mhuang412/COS333-NJ-Rise",
+      // blogId: "your-blog-post-id", // Add blog post ID here when you create the blog post
     },
   ],
 };
